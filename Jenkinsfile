@@ -8,7 +8,7 @@ pipeline{
             }
         }
         stage ('upload zip file to jfrog'){
-            step{
+            steps{
                 sh 'curl -uadmin:AP4KPM9fdPBKovDyeDco7NnkZZV -T week7ansible-${BUILD_ID}.zip "http://18.207.1.230:8081/artifactory/myownprctice/"'
             }
 
