@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage('zip the file'){
             steps{
-                sh 'zip -r ansible-${BUILD_ID}.zip * --exclude Jenkinsfile'
+                sh 'zip -r week7ansible-${BUILD_ID}.zip * --exclude Jenkinsfile'
             }
         }
     }
